@@ -30,6 +30,27 @@ specific database based on the Dialect class. A hibernate dialect gives informat
 
 `server.error.include-message=always` --> Include exception message in JSON.
 
+`Student Entity`
+
+![image](https://user-images.githubusercontent.com/67637654/197792376-9525ba9e-4937-482c-8548-88fa6ce9d5ff.png)
+
+`@SequenceGenerator` --> Sequence Generator automatically assigns a value to the numeric identity fields/properties of an entity.
+
+`sequenceName` --> sequenceName is the name of the sequence in the database. This is how we specify a sequence that already exists in the database.
+
+`allocationSize`--> Increases the database sequence by 1. 
+
+As far as I've understand, SequenceGenerator makes your primary key(in this case studentId) increment by one automatically. Whenever we add a student to the database,
+we dont have to give that entity an id. Sequencegenerator will automatically generate this inceremented id for us .
+
+`@Transient` --> Transient annotation is used to mark a field to be transient for the mapping framework, which means the field marked with @Transient is ignored by
+mapping framework and `the field not mapped to any database column.`
+
+
+
+
+
+
 
 
 
